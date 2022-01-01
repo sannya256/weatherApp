@@ -150,7 +150,7 @@ function displayWeather(response) {
 
 	//Display winds
 
-	//Display chances of precipation
+	//Display chances of precipitation
 	//Display Length of the day
 	//Display Length of the Night
 
@@ -160,3 +160,6 @@ function displayWeather(response) {
 // Add event listener to search button
 let search = document.querySelector("form");
 search.addEventListener("submit", enteredCity);
+
+// Load user location
+navigator.geolocation.getCurrentPosition(currentLocation);
